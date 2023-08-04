@@ -2,10 +2,10 @@
   <div class="container">
     <div class="form-container">
       <h2>Formulario de Registro</h2>
-      <form @submit.prevent="submitForm"> // que significa esta linea?
+      <form @submit.prevent="submitForm">
         <div class="form-group">
-          <label for="nombre">Nombre:</label> //que es un for en el label?
-          <input type="text" id="nombre" v-model="nombre" required> // que es un v-model?
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" v-model="nombre" required> 
         </div>
         <div class="form-group">
           <label for="apellido">Apellido:</label>
@@ -28,7 +28,7 @@
     </div>
   </div>
   <div class="table-container">
-      <h2>Registros Guardados</h2> //revisar la estructura de las tablas!
+      <h2>Registros Guardados</h2> 
       <table>
         <thead>
           <tr>
@@ -40,7 +40,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(registro, index) in registros" :key="index"> // repasar que es un v-for!
+          <tr v-for="(registro, index) in registros" :key="index">
             <td>{{ registro.nombre }}</td>
             <td>{{ registro.apellido }}</td>
             <td>{{ registro.correo }}</td>
